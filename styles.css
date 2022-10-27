@@ -78,8 +78,8 @@ main p {
 /* Style rules for lessons content */
 #piano, #guitar, #violin {
      margin: 0 2%;
-}
- 
+} 
+  
 #info {
     clear: left;
     background-color: #c0caf7;
@@ -119,11 +119,11 @@ main p {
     font-weight: bold;
 }
  
-.map {
+ .map {
     border: 5px solid #373684;
     width: 95%;
     height: 50%;
-}
+} 
 
 /* Style rules for footer content */
 footer {
@@ -212,7 +212,7 @@ main h3 {
   margin-bottom: 0;
   margin-left: 2%;
   margin-right: 2%;
-}
+} 
 
 
 }
