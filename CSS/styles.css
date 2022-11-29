@@ -24,7 +24,7 @@ img {
 /*Style rules for mobile viewport.*/
 
 /*Hide tab-desk class*/
-.tab-desk {
+.tab-desk, #menu-links {
 display: none;
 }
 /* Style rules for header content */
@@ -36,29 +36,41 @@ header {
 
 header h1 {
   font-family: 'DM Serif Display', serif;
+  font-size: 1.5em;
+padding: 4%;
+margin-right: 15%;
+}
+header h1 {
+  font-size: 1.5em;
+  padding: 4%;
+  margin-right: 15%;
 }
 /* Style rules for navigation area */
 nav {
   background-color: #373684;
 }
 
-nav ul {
-  list-style-type: none;
-  text-align: center;
-}
 
-nav li {
-  display: block;
-  font-size: 2em;
-  border-top: 1px solid #e5e9fc;
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
 }
-
-nav li a {
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 0.5em 1em;
-  text-decoration: none;
+ 
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0; 
+    top: 0;  
+}
+ 
+.menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #373684;
 }
 
 /* Style rules for main content */
@@ -236,13 +248,19 @@ footer a {
 .tab-desk {
   display: block;
 } 
-.mobile {
+.mobile .mobile-nav {
   display: none;  
 } 
 
 /* Tablet Viewport: Style rule for header content */     
 span.tab-desk {
   display: inline;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0;
+  font: 2em;
 }
 
 /* Tablet Viewport: Style rules for nav area */
@@ -252,6 +270,20 @@ display: inline-block;
 font-size: 1.5em;
 border-right: 1px solid #e5e9fc;
 }
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+
 nav li:last-child {
 border-right: none;
 }
@@ -308,6 +340,7 @@ nav li a {
 nav li a:hover {
   color: #373684;
   background-color: #e5e9fc;
+  transform: scale(1.2);
 }
 
 /* Desktop Viewport: Style rules for main content. */
@@ -366,4 +399,3 @@ body {
   color: #000;
 }
 }
-
